@@ -1,0 +1,145 @@
+/* STYLE SECTIONING TAGS */
+* { /* Reset the space of the webpage */
+   margin: 0px;
+   padding: 0px;
+}
+
+body {
+ background-color: lightcyan; 
+ text-align: center;
+}
+
+/*flexbox*/
+.flexboxContainer{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.flexItem{
+  flex-basis: 100%;
+  text-align: center;
+  margin: 1%;
+}
+
+@media screen and (max-width: 600px){
+  .flexboxContainer{
+    flex-wrap: wrap;
+  }
+}
+
+/* STYLE TEXT */
+
+h1 {
+  color: navy;
+  margin-top: 40px;
+}
+
+h3{
+  color: cornflowerblue;
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+  padding: 10px;
+  
+}
+
+.t1{
+  font-size: 15px;
+}
+
+.t2{
+  font-family: papyrus;
+  font-size: 25px;
+  text-align: center;
+  background-color: peachpuff;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.t3{
+  font-size: 18px;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 20px;
+}
+
+.t4{
+  font-size: 18px;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 20px;
+
+}
+
+/* STYLE IMAGES */
+#img1{
+  width: 40em;
+  height: 23em;
+}
+
+/* Mouse Hover to Show Text*/
+.inLine{
+  display: flex;
+  margin-top: 2em;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.mouseover{
+  display: block;
+}
+
+.mouseover img{
+  height: 360px;
+  width: 400px;
+}
+
+.hover-text{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: azure;
+  color: black;
+}
+
+.mouseover:hover .hover-text{
+  visibility: visible;
+  opacity: 1;
+  /* transition effect.*/
+  transition: 0.8s;
+}
+
+/* STYLE NAV BAR */
+li{
+  list-style: none;
+  display: inline;
+  background-color:aliceblue;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+
+ul{
+  margin: auto 0;
+  padding: 20px;
+}
+
+/* STYLE BUTTONS */
+#btn{
+  border: 3px;
+  padding: 16px;
+}
+
+/* ADD MORE! */
